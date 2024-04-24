@@ -2,11 +2,6 @@
 import { ref } from "vue";
 
 const drawer = ref(false); // ナビゲーションドロワーの表示を制御する変数
-
-const navigationItems = ref([
-  { text: "Skill", icon: "mdi-pen" },
-  { text: "Work", icon: "mdi-briefcase" },
-]);
 </script>
 
 <template>
