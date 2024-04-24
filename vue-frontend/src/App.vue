@@ -1,7 +1,8 @@
 <script setup>
-import TopPage from './components/TopPage.vue';
+import { RouterView } from 'vue-router';
 </script>
 
 <template>
-  <TopPage />
+  <!-- Home.vueを呼び出す -->
+  <RouterView />
 </template>
