@@ -4,27 +4,26 @@ import { ref } from "vue";
 const drawer = ref(false); // ナビゲーションドロワーの表示を制御する変数
 
 const navigationItems = ref([
-  { text: "Work", icon: "mdi-briefcase" },
   { text: "Skill", icon: "mdi-pen" },
+  { text: "Work", icon: "mdi-briefcase" },
 ]);
 </script>
 
 <template>
-  <v-app>
+  <v-app id="top">
     <v-navigation-drawer v-model="drawer" temporary>
       <v-list>
         <v-list-subheader>MENU</v-list-subheader>
         <v-list-item
-          v-for="(item, i) in navigationItems"
-          :key="i"
-          :value="item"
           color="primary"
+          prepend-icon="mdi-pen"
+          title="Skill"
+          href="#skill"
+          v-smooth-scroll
         >
-          <template v-slot:prepend>
-            <v-icon :icon="item.icon"></v-icon>
-          </template>
+        </v-list-item>
 
-          <v-list-item-title v-text="item.text"></v-list-item-title>
+        <v-list-item color="primary" prepend-icon="mdi-briefcase" title="Work">
         </v-list-item>
       </v-list>
     </v-navigation-drawer>

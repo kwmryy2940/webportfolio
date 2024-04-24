@@ -9,6 +9,9 @@ import { createVuetify } from "vuetify";
 import * as components from "vuetify/components";
 import * as directives from "vuetify/directives";
 
+// v-smooth-scroll のインポートを追加 **********/
+import vueSmoothScroll from "vue3-smooth-scroll";
+
 const vuetify = createVuetify({
   components,
   directives,
@@ -16,5 +19,6 @@ const vuetify = createVuetify({
 
 const app = createApp(App);
 app.use(vuetify);
+app.use(vueSmoothScroll);
 app.use(router);
 app.mount("#app");
