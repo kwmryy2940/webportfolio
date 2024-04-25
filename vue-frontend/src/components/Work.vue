@@ -1,11 +1,11 @@
 <template>
-  <v-app id="work">
-    <v-main>
-      <v-container fluid class="d-flex align-center justify-center">
-        Work
-      </v-container>
-      <v-container style="height: 1000px"></v-container>
-
-    </v-main>
-  </v-app>
+  <div id="work">
+    <v-container
+      fluid
+      class="d-flex align-center justify-center"
+      style="height: 1000px"
+    >
+      Work
+    </v-container>
+  </div>
 </template>

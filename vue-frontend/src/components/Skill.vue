@@ -1,11 +1,11 @@
 <template>
-  <v-app id="skill">
-    <v-main>
-      <v-container fluid class="d-flex align-center justify-center">
-        Skill
-      </v-container>
-      <v-container style="height: 1000px"></v-container>
-
-    </v-main>
-  </v-app>
+  <div id="skill">
+    <v-container
+      fluid
+      class="d-flex align-center justify-center"
+      style="height: 1000px"
+    >
+      Skill
+    </v-container>
+  </div>
 </template>

@@ -1,8 +1,10 @@
 <script setup>
-import { RouterView } from 'vue-router';
+import { RouterView } from "vue-router";
 </script>
 
 <template>
-  <!-- Home.vueを呼び出す -->
-  <RouterView />
+  <div id="app">
+    <!-- Home.vueを呼び出す -->
+    <RouterView />
+  </div>
 </template>
