@@ -12,9 +12,25 @@ import * as directives from "vuetify/directives";
 // v-smooth-scroll のインポートを追加 **********/
 import vueSmoothScroll from "vue3-smooth-scroll";
 
+const myVuetifyLightTheme = {
+  dark: false,
+  colors: {
+    primary: "#4DB6AC", // プライマリカラー
+    secondary: "#b0bec5", // セカンダリカラー
+    accent: "#6D4C41", // アクセントカラー
+    error: "#b71c1c",
+  },
+};
+
 const vuetify = createVuetify({
   components,
   directives,
+  theme: {
+    defaultTheme: 'myVuetifyLightTheme',
+    themes: {
+      myVuetifyLightTheme,
+    },
+  },
 });
 
 const app = createApp(App);
