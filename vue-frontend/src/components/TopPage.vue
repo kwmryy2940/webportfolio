@@ -20,6 +20,7 @@
 <style scoped>
 .home_main_content {
   background: url("../assets/img/home_background.jpg");
+  background-size: cover;
 }
 
 .home_main_content_text {
