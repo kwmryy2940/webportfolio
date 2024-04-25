@@ -4,7 +4,12 @@ import vue from "@vitejs/plugin-vue";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
+  base:"/webportfolio",
   build: {
+    // outputDir:"docs",
+    // outDir:"./docs",
+    // assetsDir:"./",
+    // publicPath:"./",
     rollupOptions: {
       output: {
         entryFileNames: `assets/[name].js`,
@@ -12,5 +17,6 @@ export default defineConfig({
         assetFileNames: `assets/[name].[ext]`,
       },
     },
+    outDir:"./dist"
   },
 });
