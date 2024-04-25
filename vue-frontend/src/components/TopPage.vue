@@ -18,7 +18,13 @@ const drawer = ref(false); // ナビゲーションドロワーの表示を制�
         >
         </v-list-item>
 
-        <v-list-item color="primary" prepend-icon="mdi-briefcase" title="Work">
+        <v-list-item
+          color="primary"
+          prepend-icon="mdi-briefcase"
+          title="Work"
+          href="#work"
+          v-smooth-scroll
+        >
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
