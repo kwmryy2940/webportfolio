@@ -3,28 +3,58 @@
     <v-container fluid class="d-flex align-center justify-center bg-primary">
       Works
     </v-container>
-    <v-container>
+    <v-container class="bg-secondary">
       <v-row>
         <v-col cols="3">
+          <v-card class="fill-height" elevation="2" href="#top">
+            <v-img
+              :width="300"
+              :height="150"
+              :src="workImg1"
+              aspect-ratio="4/3"
+              cover
+            ></v-img>
+            <v-card-title>portofolio</v-card-title>
+            <v-card-text
+              >本ホームページです。
+              <p>Vue3・Vuetifyの練習も兼ねて作りました。</p>
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col cols="3">
           <v-card
+            class="fill-height"
             elevation="2"
             href="https://kwmryy2940.github.io/timerapp/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img width="150px" src="../assets/img/work/timer.PNG" />
+            <v-img
+              :width="300"
+              :height="150"
+              :src="workImg2"
+              aspect-ratio="4/3"
+              cover
+            ></v-img>
             <v-card-title>Timer App</v-card-title>
             <v-card-text> シンプルなタイマーアプリです。</v-card-text>
           </v-card>
         </v-col>
         <v-col cols="3">
           <v-card
+            class="fill-height"
             elevation="2"
             href="https://kwmryy2940.github.io/bingo/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img width="150px" src="../assets/img/work/bingo.png" />
+            <v-img
+              :width="300"
+              :height="150"
+              :src="workImg3"
+              aspect-ratio="4/3"
+              cover
+            ></v-img>
             <v-card-title>Bingo</v-card-title>
             <v-card-text> 1～75の範囲でビンゴができるアプリです。</v-card-text>
           </v-card>
@@ -33,3 +63,13 @@
     </v-container>
   </div>
 </template>
+
+<script setup>
+import imageSource1 from "../assets/img/work/portofolio.png";
+import imageSource2 from "../assets/img/work/timer.png";
+import imageSource3 from "../assets/img/work/bingo.png";
+
+const workImg1 = imageSource1;
+const workImg2 = imageSource2;
+const workImg3 = imageSource3;
+</script>
