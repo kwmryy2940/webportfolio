@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "npm run build && gh-pages -d ./dist -b deploy-240425"
+    "deploy": "npm run build && gh-pages -d ./dist -b deploy-branch"
   },
   "dependencies": {
     "@mdi/font": "^7.4.47",
