@@ -1,11 +1,11 @@
 <template>
-  <div id="work">
+  <div id="work" class="bg-secondary">
     <v-container fluid class="d-flex align-center justify-center bg-primary">
       Works
     </v-container>
-    <v-container class="bg-secondary">
+    <v-container>
       <v-row>
-        <v-col cols="3">
+        <v-col cols="12" sm="8" md="6" lg="4" xl="3">
           <v-card class="fill-height" elevation="2" href="#top">
             <v-img
               :width="300"
@@ -21,7 +21,7 @@
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col cols="3">
+        <v-col cols="12" sm="8" md="6" lg="4" xl="3">
           <v-card
             class="fill-height"
             elevation="2"
@@ -40,7 +40,7 @@
             <v-card-text> シンプルなタイマーアプリです。</v-card-text>
           </v-card>
         </v-col>
-        <v-col cols="3">
+        <v-col cols="12" sm="8" md="6" lg="4" xl="3">
           <v-card
             class="fill-height"
             elevation="2"

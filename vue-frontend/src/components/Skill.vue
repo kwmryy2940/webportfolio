@@ -1,5 +1,5 @@
 <template>
-  <div id="skill">
+  <div id="skill" class="bg-secondary">
     <v-container
       fluid
       class="d-flex align-center justify-center skill_contents_text bg-primary"
@@ -7,7 +7,7 @@
       Skill
     </v-container>
 
-    <v-container class="bg-secondary">
+    <v-container>
       <v-slide-group class="pa-4" center-active show-arrows>
         <v-slide-group-item>
           <v-card class="ma-4">
