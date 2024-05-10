@@ -13,6 +13,15 @@
         >
           {{ item.text }}
         </v-btn>
+        <v-col class="text-center" cols="12">
+          <v-btn
+            icon="mdi-github"
+            variant="text"
+            href="https://github.com/kwmryy2940"
+            target="_blank"
+            rel="noopener noreferrer"
+          ></v-btn>
+        </v-col>
         <v-col class="text-center mt-4" cols="12">
           {{ new Date().getFullYear() }} — <strong>Yuya.K</strong>
         </v-col>
