@@ -11,7 +11,6 @@
               style="width: 100%"
               :height="150"
               :src="workImg1"
-              cover
               contain
             ></v-img>
             <v-card-title>portofolio</v-card-title>
@@ -33,7 +32,6 @@
               style="width: 100%"
               :height="150"
               :src="workImg2"
-              cover
               contain
             ></v-img>
             <v-card-title>Timer App</v-card-title>
@@ -52,11 +50,33 @@
               style="width: 100%"
               :height="150"
               :src="workImg3"
-              cover
               contain
             ></v-img>
             <v-card-title>Bingo</v-card-title>
             <v-card-text> 1～75の範囲でビンゴができるアプリです。</v-card-text>
+          </v-card>
+        </v-col>
+        <v-col cols="12" sm="8" md="6" lg="4" xl="3">
+          <v-card
+            class="fill-height"
+            elevation="2"
+            href="https://kwmryy2940.github.io/DreamDiary/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <v-img
+              style="width: 150%"
+              :height="150"
+              :src="workImg4"
+              contain
+            ></v-img>
+            <v-card-title>Dream Diary</v-card-title>
+            <v-card-text>
+              <p>見た夢を簡単に記録できるアプリです。</p>
+              <p>
+                保存先はブラウザのローカルストレージになるので、あまり大量の記録は保存できません。
+              </p>
+            </v-card-text>
           </v-card>
         </v-col>
       </v-row>
@@ -65,11 +85,13 @@
 </template>
 
 <script setup>
-import imageSource1 from "../assets/img/work/portofolio.png";
-import imageSource2 from "../assets/img/work/timer.png";
-import imageSource3 from "../assets/img/work/bingo.png";
+import imageSource1 from "../assets/img/work/portofolio.svg";
+import imageSource2 from "../assets/img/work/timer.svg";
+import imageSource3 from "../assets/img/work/bingo.svg";
+import imageSource4 from "../assets/img/work/dreamdiary.svg"
 
 const workImg1 = imageSource1;
 const workImg2 = imageSource2;
 const workImg3 = imageSource3;
+const workImg4 = imageSource4;
 </script>
